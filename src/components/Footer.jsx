@@ -28,10 +28,8 @@ const Footer = () => {
           )
         })}
       </ul>
-      <p className="copyright">
-        copyright &copy; Backroads travel tours company
-        <span id="date">{new Date().getFullYear()}</span> all rights reserved
-      </p>
+      <p className="copyright">© 2023 Explore Tours</p>
+      <p className="copyright">all rights reserved.</p>
     </footer>
   )
 }

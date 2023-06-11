@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Aside from "./components/Aside"
 import Featured from "./components/Featured"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
@@ -9,6 +10,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <Aside />
       <Hero />
       <About />
       <Services />

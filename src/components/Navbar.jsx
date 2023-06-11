@@ -1,14 +1,23 @@
+import { useGlobalContext } from "../context"
 import { pageLinks } from "../Data"
 import { socialLinks } from "../Data"
-import logo from "../assets/images/logo.svg"
 
 const Navbar = () => {
+  const { displayAside } = useGlobalContext()
+  // console.log(displayAside)
   return (
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className="nav-logo" alt="backroads" />
-          <button type="button" className="nav-toggle" id="nav-toggle">
+          <h3 className="nav-title">
+            Explore <span className="blue-title">Tours</span>
+          </h3>
+          <button
+            type="button"
+            className="nav-toggle"
+            id="nav-toggle"
+            onClick={displayAside}
+          >
             <i className="fas fa-bars"></i>
           </button>
         </div>
