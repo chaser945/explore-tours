@@ -1,5 +1,6 @@
 import Title from "./Title"
 import { featuredTours } from "../Data"
+import { FaMapMarkerAlt } from "react-icons/fa"
 
 const Featured = () => {
   return (
@@ -21,9 +22,9 @@ const Featured = () => {
                 <div className="tour-footer">
                   <p>
                     <span>
-                      <i className="fas fa-map"></i>
+                      <FaMapMarkerAlt />
                     </span>{" "}
-                    {location}
+                    <span className="location-span">{location}</span>
                   </p>
                   <p>{duration} days</p>
                   <p>from ${cost}</p>

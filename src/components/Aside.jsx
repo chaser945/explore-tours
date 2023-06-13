@@ -1,13 +1,13 @@
 import { useGlobalContext } from "../context"
 import { pageLinks } from "../Data"
-
+import { RiCloseLine } from "react-icons/ri"
 const Aside = () => {
   const { showAside, hideAside } = useGlobalContext()
   return (
     <div className={`aside-container ${showAside && "active"}`}>
       <div className="aside">
         <button className="close-btn" onClick={hideAside}>
-          <i className="fa-solid fa-xmark close-icon"></i>
+          <RiCloseLine className="close-icon" />
         </button>
         <ul className="aside-nav">
           {pageLinks.map((link) => {

@@ -1,6 +1,7 @@
 import { useGlobalContext } from "../context"
 import { pageLinks } from "../Data"
 import { socialLinks } from "../Data"
+import { FaBars } from "react-icons/fa"
 
 const Navbar = () => {
   const { displayAside } = useGlobalContext()
@@ -18,7 +19,7 @@ const Navbar = () => {
             id="nav-toggle"
             onClick={displayAside}
           >
-            <i className="fas fa-bars"></i>
+            <FaBars />
           </button>
         </div>
         {/* <!-- left this comment on purpose --> */}
@@ -39,10 +40,11 @@ const Navbar = () => {
         <ul className="nav-icons">
           {socialLinks.map((link) => {
             const { id, href, icon } = link
+            const Icon = icon
             return (
               <li key={id}>
                 <a href={href} target="_blank" className="nav-icon">
-                  <i className={icon}></i>
+                  <Icon />
                 </a>
               </li>
             )

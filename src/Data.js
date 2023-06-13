@@ -3,6 +3,10 @@ import tourImg2 from "./assets/images/tour-2.jpeg"
 import tourImg3 from "./assets/images/tour-3.jpeg"
 import tourImg4 from "./assets/images/tour-4.jpeg"
 
+import { FaFacebookSquare } from "react-icons/fa"
+import { FaTwitter } from "react-icons/fa"
+import { FaSquarespace } from "react-icons/fa"
+
 export const pageLinks = [
   { id: 1, href: "#home", title: "home" },
   { id: 2, href: "#about", title: "about" },
@@ -11,9 +15,9 @@ export const pageLinks = [
 ]
 
 export const socialLinks = [
-  { id: 1, href: "https://www.facebook.com", icon: "fab fa-facebook" },
-  { id: 2, href: "https://www.twitter.com", icon: "fab fa-twitter" },
-  { id: 3, href: "https://www.twitter.com", icon: "fab fa-squarespace" },
+  { id: 1, href: "https://www.facebook.com", icon: FaFacebookSquare },
+  { id: 2, href: "https://www.twitter.com", icon: FaTwitter },
+  { id: 3, href: "https://www.twitter.com", icon: FaSquarespace },
 ]
 
 export const services = [
