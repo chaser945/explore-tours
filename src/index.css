@@ -203,6 +203,8 @@ Hero
   font-size: 1.25rem;
   background: var(--clr-white);
   color: var(--clr-primary-5);
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 .hero-btn:hover {
   background: transparent;
