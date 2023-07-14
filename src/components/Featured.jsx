@@ -26,8 +26,8 @@ const Featured = () => {
                     </span>{" "}
                     <span className="location-span">{location}</span>
                   </p>
-                  <p>{duration} days</p>
-                  <p>from ${cost}</p>
+                  <p className="duration-span">{duration} days</p>
+                  <p className="cost-span">from ${cost}</p>
                 </div>
               </div>
             </article>
